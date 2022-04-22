@@ -490,7 +490,7 @@ a.termsFooter{
     text-align: right;
 }
 
-/* Mobile */
+/* Mobile - recursive*/
 
 @media (max-width: 375px) {
     html, body {

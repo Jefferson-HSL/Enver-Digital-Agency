@@ -490,6 +490,8 @@ a.termsFooter{
     text-align: right;
 }
 
+/* Mobile */
+
 @media (max-width: 375px) {
     html, body {
         width: 23.438rem;

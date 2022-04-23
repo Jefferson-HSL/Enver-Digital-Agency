@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     width: 90rem;
     height: 277.063rem;
@@ -131,6 +135,10 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
 #home{
     display: flex;
     justify-content: center;
@@ -176,7 +184,7 @@ button{
 
 .paragraph1{
     color: rgb(255, 255, 255, 0.7);
-    width: 33.5rem;
+    width: 34.7rem;
     height: 9.313rem;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
@@ -201,6 +209,15 @@ button{
     border: 0;
     cursor: pointer;
     margin: 0;
+
+}
+
+.buttonServices:hover{
+    background: url(/images/arrow-right-up.png),#5454d4ad;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    color: #ffffff;
 }
 
 .man{
@@ -435,6 +452,10 @@ button{
     cursor: pointer;
 }
 
+.buttonContact:hover{
+    background: #5454d4ad;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -492,9 +513,21 @@ a.termsFooter{
 
 /* Mobile - recursive*/
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     html, body {
         width: 23.438rem;
         height: 343.063rem;
     }
+}
+
+/* Tablet - recursive*/
+
+@media only screen and (max-width: 768px) {
+    
+}
+ 
+/* Laptop - recursive*/
+
+@media only screen and (max-width: 992px) {
+    
 }

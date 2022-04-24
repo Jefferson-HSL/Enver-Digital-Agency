@@ -145,6 +145,85 @@ button:hover{
     gap: 3rem;
 }
 
+.iconFlutuante{
+    z-index: 10;
+    position: absolute;
+    top: 14.438rem;
+    left: 42.25rem;
+}
+
+.iconFlutuante2{
+    z-index: 10;
+    position: absolute;
+    top: 11.5rem;
+    right: 7.5rem;
+}
+
+.iconFlutuante3{
+    z-index: 10;
+    position: absolute;
+    top: 41.625rem;
+    left: 38.625rem;
+}
+
+.iconFlutuante4{
+    z-index: 10;
+    position: absolute;
+    top: 44.75rem;
+    right: 6.688rem;
+}
+
+.iconFlutuante5{
+    z-index: 10;
+    position: absolute;
+    top: 121.75rem;
+    left: 11.5rem;
+}
+
+.iconFlutuante6{
+    z-index: 10;
+    position: absolute;
+    top: 128.883rem;
+    right: 7.633rem;
+}
+
+.iconFlutuante7{
+    z-index: 10;
+    position: absolute;
+    top: 174.252rem;
+    left: 5.752rem;
+    transform: rotate(55deg);
+}
+
+.iconFlutuante8{
+    z-index: 10;
+    position: absolute;
+    top: 185.938rem;
+    right: 10.088rem;
+    transform: rotate(330deg);
+}
+
+.iconFlutuante9{
+    z-index: 10;
+    position: absolute;
+    top: 223.063rem;
+    left: 4.625rem;
+}
+
+.iconFlutuante10{
+    z-index: 10;
+    position: absolute;
+    top: 237.875rem;
+    right: 8.125rem;
+}
+
+.iconFlutuante11{
+    z-index: 10;
+    position: absolute;
+    top: 257.438rem;
+    left: 9.938rem;
+}
+
 .container{
     display: flex;
     justify-content: center;

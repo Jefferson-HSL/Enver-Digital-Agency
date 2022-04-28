@@ -593,10 +593,43 @@ a.termsFooter{
 /* Mobile - recursive*/
 
 @media only screen and (max-width: 600px) {
-    html, body {
-        width: 23.438rem;
+    body {
+        align-items: center;
         height: 343.063rem;
+        padding: 0;
+        margin: none;
     }
+
+    header{
+        width: 20.438rem;
+        height: 2.125rem;
+        margin: 2.5rem 1.5rem 4.125rem;
+    }
+
+    .logotipo{
+        width: 7.188rem;
+        height: 2.125rem;
+        gap: 0.25rem;
+    }
+
+    .logo{
+        width: 1.688rem;
+        height: 1.688rem;
+    }
+
+    .name{
+        width: 5.25rem;
+        height: 2.125rem;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .button{
+        display: none;
+    }
+
 }
 
 /* Tablet - recursive*/

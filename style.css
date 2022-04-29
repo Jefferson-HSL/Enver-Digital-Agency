@@ -344,10 +344,13 @@ button:hover{
     text-align: start;
 }
 
+.divImageBG{
+    margin-top: 3.125rem;
+}
+
 .imageBG{
     width: 75rem;
     height: 41.875rem;
-    margin-top: 3.125rem;
 }
 
 
@@ -630,6 +633,276 @@ a.termsFooter{
         display: none;
     }
 
+    .menuResposive{
+        display: none; /*alterar depois*/
+    }
+
+    #home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 23.813rem;
+        height: 54.594rem;
+    }
+
+    .iconFlutuante{
+        width: 3.817rem;
+        height: 1.125rem;
+        top: 40.375rem;
+        left: 1.5rem;
+    }
+
+    .iconFlutuante2{
+        width: 2.231rem;
+        height: 2.625rem;
+        top: 38.875rem;
+        left: 18.5rem;
+    }
+
+    .iconFlutuante3{
+        width: 4.09rem;
+        height: 4.731rem;
+        top: 60.938rem;
+        left: 1.5rem;
+    }
+
+    .iconFlutuante4{
+        width: 2.438rem;
+        height: 2.438rem;
+        top: 59.188rem;
+        left: 19.125rem;
+    }
+
+    .iconFlutuante5{
+        width: 4.09rem;
+        height: 4.731rem;
+        top: 102.438rem;
+        left: 1.25rem;
+    }
+
+    .iconFlutuante6{
+        width: 1.75rem;
+        height: 1.75rem;
+        top: 112.938rem;
+        left: 21.063rem;
+    }
+
+    .iconFlutuante7{
+        width: 1.75rem;
+        height: 1.75rem;
+        top: 235.813rem;
+        left: 1.5rem;
+    }
+
+    .iconFlutuante8{
+        width: 2.461rem;
+        height: 2.895rem;
+        top: 247.565rem;
+        left: 18.625rem;
+    }
+
+    .iconFlutuante9{
+        width: 3.817rem;
+        height: 1.125rem;
+        top: 280.125rem;
+        left: 2.063rem;
+    }
+
+    .iconFlutuante10{
+        width: 1.75rem;
+        height: 1.75rem;
+        top: 286.813rem;
+        left: 19.875rem;
+    }
+
+    .iconFlutuante11{
+        width: 2.461rem;
+        height: 2.895rem;
+        top: 308.438rem;
+        left: 0.563rem;
+    }
+
+    .container{
+        margin-left: 1.5rem;
+    }
+
+    .containerTitle{
+        width: auto;
+        height: auto;
+    }
+
+    .divTitle{
+        width: auto;
+        height: auto;
+        margin-top: 0;
+    }
+ 
+    .title{
+        width: 20.438rem;
+        height: 11.813rem;
+        font-size: 2.625rem;
+        font-weight: 700;
+        line-height: 3.938rem;
+        margin: none;
+    }
+
+    .divParagraph1{
+        width: auto;
+        height: auto;
+        margin-top: 1.875rem;
+    }
+
+    .paragraph1{
+        width: 20.438rem;
+        height: 6rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .divButtonServices{
+        margin-top: 3.125rem;
+    }
+
+    .buttonServices{
+        background-size: 1.508rem;
+        background-position: 94%;
+        width: 10.375rem;
+        height: 2.75rem;
+        font-size: 1rem;
+        line-height: 1.313rem;
+    }
+
+    .man{
+        width: 23.814rem;
+        height: 25.907rem;
+    }
+
+    #project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 20.438rem;
+        height: 26.25rem;
+        margin-top: 8.781rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .containerTitle2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 1.875rem;
+    }
+
+    .title2{
+        width: 20.438rem;
+        height: 6.75rem;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+    }
+
+    .paragraph2{
+        width: 20.438rem;
+        height: 3rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .divImageBG{
+        margin-top: 3.125rem;
+    }
+
+    .imageBG{
+        width: 20.438rem;
+        height: 11.5rem;
+    }
+
+    #services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23.438rem;
+        height: 127.625rem;
+    }
+
+    .containerTitle3{
+        width: auto;
+        height: auto;
+    }
+
+    .title3{
+        width: 20.438rem;
+        height: 6.75rem;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+    }
+
+    .containerService{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerService.one{
+        margin-top: 3.125rem;
+        margin-bottom: 0;
+    }
+
+    .cardService{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23.438rem;
+        height: 18.275rem;
+        gap: 1.25rem;
+    }
+
+    .containerImageCard{
+        width: auto;
+        height: auto;
+    }
+
+    .imageCard{
+        width: 4.313rem;
+        height: 4.313rem;
+    }
+
+    .containerTitleCard{
+        width: auto;
+        height: auto;
+    }
+
+    .titleCard{
+        width: 100%;
+        height: 2.063rem;
+    }
+
+    .containerParagraphCard{
+        width: auto;
+        height: auto;
+    }
+
+    .paragraphCard{
+        width: 18.688rem;
+        height: 3.5rem;
+    }
+
+    /* terminar o resposivo do about e contact*/
+
+    #about{
+
+    }
 }
 
 /* Tablet - recursive*/

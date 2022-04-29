@@ -9,6 +9,8 @@ html{
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     width: 90rem;
     height: 277.063rem;
     background: #19191b;
@@ -62,7 +64,9 @@ li{
 }
 
 a{
+    display: flex;
     text-decoration: none;
+    margin: 0;
 }
 
 a.homeMenu{
@@ -112,13 +116,13 @@ a.aboutMenu{
     line-height: 1.563rem;
 }
 
-.button{
+.divButtonHeader{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-button{
+.buttonHeader{
     background: transparent;
     color: rgb(255, 255, 255, 0.7);
     width: 9.813rem;
@@ -135,7 +139,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.buttonHeader:hover{
     background-color: rgba(0, 0, 0, 0.363);
 }
 
@@ -230,23 +234,23 @@ button:hover{
     flex-direction: column;
     width: 100%;
     height: 100%;
+    margin-top: 9.25rem;
 }
 
 .containerTitle{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .divTitle{
-    width: 100%;
-    height: 100%;
-    margin-top: 9.25rem;
+    width: auto;
+    height: auto;
 }
 
 .title{
     color: #ffffff;
     width: 36.375rem;
-    height: 15.75;
+    height: 15.75rem;
     font-family: 'Graphik', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -273,17 +277,18 @@ button:hover{
     margin: 0;
 }
 
-.divButtonServices{
+.divButtonHome{
     margin-top: 3.125rem;
 }
 
-.buttonServices{
+.buttonHome{
     width: 12.75rem;
     height: 3.625rem;
     background: url(/images/arrow-right-up.png),#5454d4;
     background-size: 1.5rem;
     background-repeat: no-repeat;
     background-position: 90%;
+    border-radius: 0.313rem;
     color: #ffffff;
     border: 0;
     cursor: pointer;
@@ -291,7 +296,7 @@ button:hover{
 
 }
 
-.buttonServices:hover{
+.buttonHome:hover{
     background: url(/images/arrow-right-up.png),#5454d4ad;
     background-size: 1.5rem;
     background-repeat: no-repeat;
@@ -500,6 +505,26 @@ button:hover{
     height: 15.813rem;
 }
 
+.containerArrows{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.arrowleft{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0;
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.arrowright{
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0;
+    background: #5454d4;
+}
+
 #contact{
     display: flex;
     align-items: center;
@@ -532,6 +557,7 @@ button:hover{
     height: 3.75rem;
     border: 0;
     cursor: pointer;
+    border-radius: 0.313rem;
 }
 
 .buttonContact:hover{
@@ -546,11 +572,14 @@ footer{
     margin-top: 3.125rem;
 }
 
+ul{
+    gap: 2.5rem;
+}
+
 a.supportFooter{
     color: rgb(255, 255, 255, 0.7);
     width: 4.125rem;
     height: 1.563rem;
-    margin-right: 2.5rem;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -562,7 +591,6 @@ a.privacyFooter{
     color: rgb(255, 255, 255, 0.7);
     width: 6.938rem;
     height: 1.563rem;
-    margin-right: 2.5rem;
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -595,7 +623,7 @@ a.termsFooter{
 
 /* Mobile - recursive*/
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 380px) and (max-width: 600px) {
     body {
         align-items: center;
         height: 343.063rem;
@@ -629,7 +657,11 @@ a.termsFooter{
         display: none;
     }
 
-    .button{
+    .duvButtonHeader{
+        display: none;
+    }
+
+    .buttonHeader{
         display: none;
     }
 
@@ -646,9 +678,15 @@ a.termsFooter{
         height: 54.594rem;
     }
 
+    .containerIconFlutuantes{
+        display: none;
+    }
+
     .iconFlutuante{
         width: 3.817rem;
         height: 1.125rem;
+        z-index: 10;
+        position: absolute;
         top: 40.375rem;
         left: 1.5rem;
     }
@@ -898,10 +936,174 @@ a.termsFooter{
         height: 3.5rem;
     }
 
-    /* terminar o resposivo do about e contact*/
+    /* terminar o resposivo do about e contact */
 
     #about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 23.438rem;
+        height: 33.763rem;
+        margin-top: 8.75rem;
+    }
 
+    .containerTitle4{
+        width: auto;
+        height: auto;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .title4{
+        width: 20.438rem;
+        height: 6.75rem;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+    }
+
+    .containerAbout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.125rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .cardAbout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardAbout.two{
+        display: none;
+    }
+
+    .cardAbout.tree{
+        display: none;
+    }
+
+    .imageCardAbout{
+        width: 20.438rem;
+        height: 15.375rem;
+    }
+
+    .containerArrows{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.781rem;
+    }
+
+    .arrowleft{
+        width: 2.388rem;
+        height: 2.388rem;
+        background: url(/images/arrowLeft.png), rgb(255, 255, 255, 0.2);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.508rem;
+        border: 0;
+        border-radius: 1.5rem;
+    }
+
+    .arrowright{
+        width: 2.388rem;
+        height: 2.388rem;
+        background: url(/images/arrowRight.png), #5454d4;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.508rem;
+        border: 0;
+        border-radius: 1.5rem;
+    }
+
+    #contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 23.438rem;
+        height: 26rem;
+        margin-top: 8.799rem;
+    }
+
+    .containerContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 20.688rem;
+        height: 16rem;
+        gap: 3.125rem;
+    }
+
+    .title5{
+        width: 20.438rem;
+        height: 10.125rem;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+    }
+
+    .divButtonContact{
+        width: 100%;
+        height: auto;
+    }
+
+    .buttonContact{
+        width: 10.375rem;
+        height: 2.75rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 16.813rem;
+        height: 19.125rem;
+        gap: 2.5rem;
+        margin: 8.75rem 3.313rem 3.125rem 3.313rem;
+    }
+
+    .logoFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer{
+        width: auto;
+        height: auto;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 2.5rem;
+    }
+
+    li{
+        text-align: center;
+    }
+
+    .supportFooter{
+        margin-right: 0;
+    }
+
+    .privacyFooter{
+        margin-left: 0;
+    }
+
+    .paragraphFooter{
+        text-align: center;
     }
 }
 
